@@ -1,0 +1,41 @@
+@charset 'UTF-8';
+
+/*
+ * This is a CSS file
+ */
+
+:root {
+    --bg-color: cyan;
+    display: block;
+}
+
+a > b.c input[type = 'password'] {
+    /* A pretty background */
+    background: var(--bg-color, orange);
+
+    /* Not worried about compatibility here */
+    /* stylelint-disable no-unsupported-browser-features */
+    top: calc(42px / 2 - 20%);
+    /* stylelint-enable no-unsupported-browser-features */
+}
+
+section:last-child p::before {
+    content: 'Conclusion';
+    padding: 10px 0;
+}
+
+@media
+    (min-width: 1024px),
+    handheld and (orientation: landscape) {
+    text-decoration: line-through;
+}
+
+@keyframes animation {
+    from {
+        background-color: red;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
