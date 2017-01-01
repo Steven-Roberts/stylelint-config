@@ -20,7 +20,7 @@ div {
         color: rgba(200, 100, 0, 0.5);
     }
 
-    span + span {
+    span + span, article {
         margin-left: $margin;
         margin-right: $margin;
     }
