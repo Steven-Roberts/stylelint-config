@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-steven-roberts",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A shareable config for stylelint",
   "author": "Steven Roberts (https://steven-roberts.github.io/)",
   "homepage": "https://github.com/Steven-Roberts/stylelint-config",
