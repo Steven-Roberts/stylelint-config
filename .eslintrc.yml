@@ -1,3 +1,5 @@
 env:
     node: true
 extends: eslint-config-steven-roberts
+rules:
+    sort-keys: error
