@@ -123,6 +123,12 @@ module.exports = {
         'property-no-vendor-prefix': true,
         'property-whitelist': null,
         'root-no-standard-properties': null,
+        'rule-empty-line-before': ['always', {
+            except: [
+                'after-single-line-comment',
+                'first-nested'
+            ]
+        }],
         'rule-nested-empty-line-before': ['always', {
             except: ['first-nested']
         }],
@@ -169,6 +175,7 @@ module.exports = {
         'string-no-newline': true,
         'string-quotes': 'single',
         'stylelint-disable-reason': 'always-before',
+        'time-min-milliseconds': null,
         'time-no-imperceptible': null,
         'unit-blacklist': null,
         'unit-case': 'lower',
