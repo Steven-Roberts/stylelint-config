@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-steven-roberts",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A shareable config for stylelint",
   "author": "Steven Roberts (https://steven-roberts.github.io/)",
   "homepage": "https://github.com/Steven-Roberts/stylelint-config",
@@ -30,5 +30,8 @@
     "eslint": "^3.19.0",
     "eslint-config-steven-roberts": "steven-roberts/eslint-config",
     "stylelint": "^7.10.1"
+  },
+  "dependencies": {
+    "stylelint-order": "^0.4.3"
   }
 }
