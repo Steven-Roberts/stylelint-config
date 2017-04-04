@@ -1,6 +1,11 @@
 'use strict';
 
+// TODO: Remove deprecated rules when stylelint 8 arrives
+
 module.exports = {
+    plugins: [
+        'stylelint-order'
+    ],
     rules: {
         'at-rule-blacklist': null,
         'at-rule-empty-line-before': 'always',
@@ -10,6 +15,7 @@ module.exports = {
         'at-rule-no-unknown': true,
         'at-rule-no-vendor-prefix': true,
         'at-rule-semicolon-newline-after': 'always',
+        'at-rule-semicolon-space-before': 'never',
         'at-rule-whitelist': null,
         'block-closing-brace-empty-line-before': 'never',
         'block-closing-brace-newline-after': 'always',
@@ -17,7 +23,7 @@ module.exports = {
         'block-closing-brace-space-after': null,
         'block-closing-brace-space-before': null,
         'block-no-empty': true,
-        'block-no-single-line': true,
+        'block-no-single-line': null,
         'block-opening-brace-newline-after': 'always',
         'block-opening-brace-newline-before': null,
         'block-opening-brace-space-after': null,
@@ -29,7 +35,7 @@ module.exports = {
         'color-no-invalid-hex': true,
         'comment-empty-line-before': ['always', {
             except: ['first-nested'],
-            ignore: ['between-comments', 'stylelint-commands']
+            ignore: ['after-comment', 'stylelint-commands']
         }],
         'comment-no-empty': true,
         'comment-whitespace-inside': 'always',
@@ -41,10 +47,10 @@ module.exports = {
         'declaration-bang-space-after': 'never',
         'declaration-bang-space-before': 'always',
         'declaration-block-no-duplicate-properties': true,
-        'declaration-block-no-ignored-properties': true,
+        'declaration-block-no-ignored-properties': null,
         'declaration-block-no-redundant-longhand-properties': null,
         'declaration-block-no-shorthand-property-overrides': true,
-        'declaration-block-properties-order': 'alphabetical',
+        'declaration-block-properties-order': null,
         'declaration-block-semicolon-newline-after': 'always',
         'declaration-block-semicolon-newline-before': 'never-multi-line',
         'declaration-block-semicolon-space-after': null,
@@ -93,7 +99,7 @@ module.exports = {
         'media-feature-name-no-unknown': true,
         'media-feature-name-no-vendor-prefix': true,
         'media-feature-name-whitelist': null,
-        'media-feature-no-missing-punctuation': true,
+        'media-feature-no-missing-punctuation': null,
         'media-feature-parentheses-space-inside': 'never',
         'media-feature-range-operator-space-after': 'always',
         'media-feature-range-operator-space-before': 'always',
@@ -107,16 +113,24 @@ module.exports = {
         'no-empty-source': true,
         'no-eol-whitespace': true,
         'no-extra-semicolons': true,
-        'no-indistinguishable-colors': true,
+        'no-indistinguishable-colors': null,
         'no-invalid-double-slash-comments': true,
         'no-missing-end-of-source-newline': true,
         'no-unknown-animations': true,
-        'no-unsupported-browser-features': [true, {
-            severity: 'warning'
-        }],
+        'no-unsupported-browser-features': null,
         'number-leading-zero': 'always',
         'number-max-precision': null,
         'number-no-trailing-zeros': true,
+        'order/order': [
+            'custom-properties',
+            'dollar-variables',
+            'at-variables',
+            'declarations',
+            'rules',
+            'at-rules',
+            'less-mixins'
+        ],
+        'order/properties-alphabetical-order': true,
         'property-blacklist': null,
         'property-case': 'lower',
         'property-no-unknown': true,
@@ -129,10 +143,8 @@ module.exports = {
                 'first-nested'
             ]
         }],
-        'rule-nested-empty-line-before': ['always', {
-            except: ['first-nested']
-        }],
-        'rule-non-nested-empty-line-before': 'always',
+        'rule-nested-empty-line-before': null,
+        'rule-non-nested-empty-line-before': null,
         'selector-attribute-brackets-space-inside': 'never',
         'selector-attribute-operator-blacklist': null,
         'selector-attribute-operator-space-after': 'always',
@@ -154,7 +166,7 @@ module.exports = {
         'selector-nested-pattern': null,
         'selector-no-attribute': null,
         'selector-no-combinator': null,
-        'selector-no-empty': true,
+        'selector-no-empty': null,
         'selector-no-id': null,
         'selector-no-qualifying-type': null,
         'selector-no-type': null,
@@ -168,13 +180,13 @@ module.exports = {
         'selector-pseudo-element-case': 'lower',
         'selector-pseudo-element-colon-notation': 'double',
         'selector-pseudo-element-no-unknown': true,
-        'selector-root-no-composition': true,
+        'selector-root-no-composition': null,
         'selector-type-case': 'lower',
         'selector-type-no-unknown': true,
         'shorthand-property-no-redundant-values': null,
         'string-no-newline': true,
         'string-quotes': 'single',
-        'stylelint-disable-reason': 'always-before',
+        'stylelint-disable-reason': null,
         'time-min-milliseconds': null,
         'time-no-imperceptible': null,
         'unit-blacklist': null,

@@ -31,4 +31,8 @@ div {
             $bg-color
             no-repeat left bottom fixed;
     }
+
+    @media print {
+        width: 8.5in;
+    }
 }
