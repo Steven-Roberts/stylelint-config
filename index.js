@@ -1,11 +1,7 @@
 'use strict';
 
-// TODO: Remove deprecated rules when stylelint 8 arrives
-
 module.exports = {
-    plugins: [
-        'stylelint-order'
-    ],
+    plugins: ['stylelint-order'],
     rules: {
         'at-rule-blacklist': null,
         'at-rule-empty-line-before': 'always',
@@ -23,7 +19,6 @@ module.exports = {
         'block-closing-brace-space-after': null,
         'block-closing-brace-space-before': null,
         'block-no-empty': true,
-        'block-no-single-line': null,
         'block-opening-brace-newline-after': 'always',
         'block-opening-brace-newline-before': null,
         'block-opening-brace-space-after': null,
@@ -33,24 +28,24 @@ module.exports = {
         'color-named': null,
         'color-no-hex': null,
         'color-no-invalid-hex': true,
-        'comment-empty-line-before': ['always', {
-            except: ['first-nested'],
-            ignore: ['after-comment', 'stylelint-commands']
-        }],
+        'comment-empty-line-before': [
+            'always',
+            {
+                except: ['first-nested'],
+                ignore: ['after-comment', 'stylelint-commands']
+            }
+        ],
         'comment-no-empty': true,
         'comment-whitespace-inside': 'always',
         'comment-word-blacklist': null,
         'custom-media-pattern': null,
         'custom-property-empty-line-before': 'never',
-        'custom-property-no-outside-root': null,
         'custom-property-pattern': null,
         'declaration-bang-space-after': 'never',
         'declaration-bang-space-before': 'always',
         'declaration-block-no-duplicate-properties': true,
-        'declaration-block-no-ignored-properties': null,
         'declaration-block-no-redundant-longhand-properties': null,
         'declaration-block-no-shorthand-property-overrides': true,
-        'declaration-block-properties-order': null,
         'declaration-block-semicolon-newline-after': 'always',
         'declaration-block-semicolon-newline-before': 'never-multi-line',
         'declaration-block-semicolon-space-after': null,
@@ -80,9 +75,9 @@ module.exports = {
         'function-name-case': 'lower',
         'function-parentheses-newline-inside': 'always-multi-line',
         'function-parentheses-space-inside': 'never-single-line',
-        'function-url-data-uris': null,
         'function-url-no-scheme-relative': true,
         'function-url-quotes': 'always',
+        'function-url-scheme-blacklist': null,
         'function-url-scheme-whitelist': null,
         'function-whitelist': null,
         'function-whitespace-after': 'always',
@@ -99,7 +94,6 @@ module.exports = {
         'media-feature-name-no-unknown': true,
         'media-feature-name-no-vendor-prefix': true,
         'media-feature-name-whitelist': null,
-        'media-feature-no-missing-punctuation': null,
         'media-feature-parentheses-space-inside': 'never',
         'media-feature-range-operator-space-after': 'always',
         'media-feature-range-operator-space-before': 'always',
@@ -107,17 +101,14 @@ module.exports = {
         'media-query-list-comma-newline-before': 'never-multi-line',
         'media-query-list-comma-space-after': 'always-single-line',
         'media-query-list-comma-space-before': 'never',
-        'no-browser-hacks': null,
         'no-descending-specificity': true,
         'no-duplicate-selectors': true,
         'no-empty-source': true,
         'no-eol-whitespace': true,
         'no-extra-semicolons': true,
-        'no-indistinguishable-colors': null,
         'no-invalid-double-slash-comments': true,
         'no-missing-end-of-source-newline': true,
         'no-unknown-animations': true,
-        'no-unsupported-browser-features': null,
         'number-leading-zero': 'always',
         'number-max-precision': null,
         'number-no-trailing-zeros': true,
@@ -136,15 +127,15 @@ module.exports = {
         'property-no-unknown': true,
         'property-no-vendor-prefix': true,
         'property-whitelist': null,
-        'root-no-standard-properties': null,
-        'rule-empty-line-before': ['always', {
-            except: [
-                'after-single-line-comment',
-                'first-nested'
-            ]
-        }],
-        'rule-nested-empty-line-before': null,
-        'rule-non-nested-empty-line-before': null,
+        'rule-empty-line-before': [
+            'always',
+            {
+                except: [
+                    'after-single-line-comment',
+                    'first-nested'
+                ]
+            }
+        ],
         'selector-attribute-brackets-space-inside': 'never',
         'selector-attribute-operator-blacklist': null,
         'selector-attribute-operator-space-after': 'always',
@@ -160,17 +151,17 @@ module.exports = {
         'selector-list-comma-newline-before': 'never-multi-line',
         'selector-list-comma-space-after': 'always-single-line',
         'selector-list-comma-space-before': 'never',
+        'selector-max-attribute': 4,
+        'selector-max-class': 6,
+        'selector-max-combinators': 6,
         'selector-max-compound-selectors': 4,
         'selector-max-empty-lines': 0,
+        'selector-max-id': 1,
         'selector-max-specificity': null,
+        'selector-max-type': 6,
+        'selector-max-universal': 1,
         'selector-nested-pattern': null,
-        'selector-no-attribute': null,
-        'selector-no-combinator': null,
-        'selector-no-empty': null,
-        'selector-no-id': null,
         'selector-no-qualifying-type': null,
-        'selector-no-type': null,
-        'selector-no-universal': null,
         'selector-no-vendor-prefix': true,
         'selector-pseudo-class-blacklist': null,
         'selector-pseudo-class-case': 'lower',
@@ -180,15 +171,12 @@ module.exports = {
         'selector-pseudo-element-case': 'lower',
         'selector-pseudo-element-colon-notation': 'double',
         'selector-pseudo-element-no-unknown': true,
-        'selector-root-no-composition': null,
         'selector-type-case': 'lower',
         'selector-type-no-unknown': true,
         'shorthand-property-no-redundant-values': null,
         'string-no-newline': true,
         'string-quotes': 'single',
-        'stylelint-disable-reason': null,
         'time-min-milliseconds': null,
-        'time-no-imperceptible': null,
         'unit-blacklist': null,
         'unit-case': 'lower',
         'unit-no-unknown': true,
