@@ -27,9 +27,9 @@
     "stylelint": "^9.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.18.1",
+    "eslint": "^4.19.1",
     "eslint-config-steven-roberts": "github:steven-roberts/eslint-config",
-    "stylelint": "^9.1.1"
+    "stylelint": "^9.2.0"
   },
   "dependencies": {
     "stylelint-order": "^0.8.1"

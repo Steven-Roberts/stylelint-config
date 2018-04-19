@@ -161,6 +161,7 @@ module.exports = {
         'selector-max-compound-selectors': 4,
         'selector-max-empty-lines': 0,
         'selector-max-id': 1,
+        'selector-max-pseudo-class': 4,
         'selector-max-specificity': null,
         'selector-max-type': 6,
         'selector-max-universal': 1,

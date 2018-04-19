@@ -2,7 +2,7 @@
 
 'use strict';
 
-const allRules = Object.keys(require('stylelint/lib/rules'));
+const allRules = require('stylelint/lib/rules');
 const numRules = allRules.length;
 const myRules = Object.keys(require('.').rules);
 
