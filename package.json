@@ -24,14 +24,14 @@
     "index.js"
   ],
   "peerDependencies": {
-    "stylelint": "^9.0.0"
+    "stylelint": "^10.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.6.1",
+    "eslint": "^5.16.0",
     "eslint-config-steven-roberts": "github:steven-roberts/eslint-config",
-    "stylelint": "^9.6.0"
+    "stylelint": "^10.0.1"
   },
   "dependencies": {
-    "stylelint-order": "^1.0.0"
+    "stylelint-order": "^3.0.0"
   }
 }
