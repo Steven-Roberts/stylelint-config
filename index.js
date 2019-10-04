@@ -190,6 +190,7 @@ module.exports = {
         'string-no-newline': true,
         'string-quotes': 'single',
         'time-min-milliseconds': null,
+        'unicode-bom': null,
         'unit-blacklist': null,
         'unit-case': 'lower',
         'unit-no-unknown': true,
